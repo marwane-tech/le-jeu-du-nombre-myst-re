@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+int main(){
+ int LeNomberMyStre=0, LeNomberEntre=0;
+ const int Max=99, Min=1;
+ srand(time(NULL));
+ LeNomberMyStre=(rand()% (Max-Min+1))+Min;
+ do{
+printf("Quel est le Nomber :\n");
+    scanf("%d", &LeNomberEntre);
+
+    if(LeNomberMyStre>LeNomberEntre)
+        printf("c'est plus!\n");
+
+    else if(LeNomberMyStre<LeNomberEntre)
+       printf("c'est moins!\n");
+
+    else
+        printf("Bravo vous avez trouver le nomber myster!!!\n");
+
+
+     }
+     while(LeNomberMyStre!=LeNomberEntre);
+
+
+return 0;
+
+}
